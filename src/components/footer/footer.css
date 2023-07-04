@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 11.9vh;
+}
+.f{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+}

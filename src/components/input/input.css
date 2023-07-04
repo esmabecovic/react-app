@@ -1,0 +1,30 @@
+/* .Login{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 250px;
+    background-color: #A39BA8;
+    margin: 200px;
+    margin-left: 600px;
+    border-radius: 15px;
+}
+.plch{
+    margin: 10px;
+    border-radius: 10px;
+    height: 35px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btns{
+    display: flex;
+    margin-top: 40px;
+} */
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 34px;
+    margin-top: 20px;
+    padding-left: 10px;
+}

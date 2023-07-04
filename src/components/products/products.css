@@ -1,0 +1,17 @@
+.more-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #F5E0EC;
+    border: 2px solid #E1A3C6;
+    color: #703b59;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}

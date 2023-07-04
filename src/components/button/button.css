@@ -1,0 +1,22 @@
+.btnDiv{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.btn{
+    display: flex;
+    /* background-color: rgb(130, 130, 253); */
+    width: 100px;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .btn:hover{
+    transition: 0.5s;
+    background-color: blanchedalmond;
+} */
