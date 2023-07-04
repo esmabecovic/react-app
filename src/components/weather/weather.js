@@ -6,20 +6,20 @@ import SearchBar from "../products/searchbar";
 const API_KEY = `dde669c54dbec53c562abad52d716702`;
 const BASE_URL = `https://api.openweathermap.org/data/2.5`;
 
-const fetchData = async (city) => {
+const fetchData = async () => {
   const response = await axios.get(
-    `${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`
+    `${BASE_URL}/weather?q=London&appid=${API_KEY}&units=metric`
   );
   const data = response.data;
   return data;
 };
 
-console.log(fetchData("London"));
+console.log(fetchData());
 
 const GetCity = () => {
   const [dataFromSearch, setDataFromSearch] = useState("");
   const { data, isLoading, isError, error } = useQuery("city", fetchData);
-  fetchData(dataFromSearch )
+  //   fetchData(dataFromSearch)
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -46,7 +46,9 @@ const GetCity = () => {
           <div className="card" key={data.id}>
             <h1>{data.name}</h1>
             {/* Replace 'city.icon' with the correct property from the API response */}
-            <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} />
+            {/* <img
+              src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
+            /> */}
             <h2>{data.main.temp}</h2>
             <h2>{data.clouds.all}</h2>
           </div>
